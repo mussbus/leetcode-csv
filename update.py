@@ -13,7 +13,7 @@ df["score"] = pd.to_numeric(df["score"], errors="raise")
 
 df = df.sort_values(["category", "date"])
 
-df["cumulative_score"] = df.groupby("category")["score"].cumsum()
+df["cumulative_score"] = df.groupby("category")["score"].cumsum().round(1)
 
 # print(df[["date", "category", "score", "cumulative_score"]])
 
