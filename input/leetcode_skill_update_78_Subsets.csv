@@ -1,4 +1,0 @@
-date,problem_number,problem_name,overall_score,category,delta,new_cumulative_score,notes
-2026-03-13,78,Subsets,7.8,Backtracking,0.3,5.9,Correct choose-explore-undo structure; main gain was fixing the recursive state transition from startingIndex + 1 to i + 1.
-2026-03-13,78,Subsets,7.8,BFS / DFS,0.1,6.6,This is an implicit DFS over the subset decision tree; traversal became correct once branch state was tied to the loop variable.
-2026-03-13,78,Subsets,7.8,Arrays,0.1,7.6,Minor credit for disciplined index ordering and avoiding duplicate reuse without a visited array.
